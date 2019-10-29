@@ -7,7 +7,7 @@ body {
     text-transform: capitalize;
 }
 
- /* BACKGROUND IMAGE SLIDER*/
+ /* BACKGROUND IMAGE SLIDER */
 .image-slide > div {
     position: absolute;
     opacity: 0;
@@ -33,10 +33,21 @@ body {
     background: url(./res/4.png);
 }
 /*################################*/
+
+.menu-icon i{
+    position: absolute;
+    font-size: 2rem;
+    padding: 0.5rem;
+
+    z-index: 2;
+}
+
+
 .account {
     display: flex;
     align-items: center;
     padding: .5rem;
+    padding-top: 3rem;
 }
 img {
     height: 3rem;
@@ -44,10 +55,8 @@ img {
     padding: .5rem;
 }
 
-
-
 li {
-    padding: 0.5rem;
+    padding: 0.6rem;
 
     list-style: none;
     display: flex;
@@ -57,24 +66,41 @@ li:hover {
     border-right: 0.3rem solid red;
     background: #9999;
 }
-i {
-    padding-right:2.5rem;
+.sidebar i {
+    padding-right:2rem;
 }
 
 .sidebar{
     position: fixed;
+    margin-left: -50vw;
+
     width: 50vw;
     height: 100vh;
     z-index: 1;
 
     background: #2229;
     color: #eef;
+    transition: .5s ease;
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
+    justify-content: space-between;
+    
+    overflow: hidden;
 }
 
+.settings {
+    padding: 0.5rem;
+}
+
+
+
+
+
+
+
+
+/*#### red border ####*/
 .rb {
     border: 1px solid red;
 }

@@ -1,6 +1,6 @@
 let bgArr = document.querySelectorAll(".image-slide > div")
 
-//setInterval(flipThrough, 3000)
+setInterval(flipThrough, 3000)
 
 let i = 0
 function flipThrough() {
@@ -24,4 +24,13 @@ function flipThrough() {
 }
 flipThrough()
 
-
+let breadState = true
+function bread() {
+    if(breadState){
+        document.querySelector(".sidebar").style.marginLeft = "0vw"
+        breadState = false
+    }else{
+        document.querySelector(".sidebar").style.marginLeft = "-50vw"
+        breadState = true
+    }
+}   
